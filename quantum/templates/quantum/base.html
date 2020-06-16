@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="icon" type="image/jpg" href="{% static 'quantum/images/favicon ball.jpg' %}">
+
+<title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+
+        <img src="{% static "quantum/images/favicon ball.jpg" %}" alt="images" height="40px" width="40"
+             style="border-radius: 100%">
+        {% if user.is_authenticated %}
+
+            <ul class="navbar-nav">
+                <li style="color: white"> Hello, {{ user.username }}
+                </li>
+            </ul>
+
+        {% endif %}
+        <div class="spinner-border text-muted">
+            <pre style="color:white;"> Q</pre>
+        </div>
+        <div class="spinner-border text-primary">
+            <pre style="color:white;"> U</pre>
+        </div>
+        <div class="spinner-border text-success">
+            <pre style="color:white;"> A</pre>
+        </div>
+        <div class="spinner-border text-info">
+            <pre style="color:white;"> N</pre>
+        </div>
+        <div class="spinner-border text-warning">
+            <pre style="color:white;"> T</pre>
+        </div>
+        <div class="spinner-border text-danger">
+            <pre style="color:white;"> U</pre>
+        </div>
+        <div class="spinner-border text-info">
+            <pre style="color:white;"> M</pre>
+        </div>
+        {% if user.is_authenticated %}
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'logout' %}">Log out</a>
+                </li>
+            </ul>
+
+        {% endif %}
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon " style="color: white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'Homepage' %}">Home Page<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'contact' %}">Contact</a>
+                </li>
+            </ul>
+
+
+            <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <p class="cstm-social">
+                <a href='https://chat.whatsapp.com/Df72286nv2PEJaSeRWd7Gx' class="fa fa-whatsapp">
+
+                </a>&nbsp;
+                <a href="https://www.facebook.com/hemraj.lohkna.5" class="fa fa-facebook"></a> &nbsp
+                <a href="https://twitter.com/Hemrajluv1" class="fa fa-twitter"></a> &nbsp
+                <a href="https://www.instagram.com/hemraj__luv" class="fa fa-instagram"></a> &nbsp
+                <a href="https://www.linkedin.com/in/hemraj-luv-3rd-571726184" class="fa fa-linkedin"></a> &nbsp
+
+            </p>
+
+
+        </div>
+    </nav>
+</div>
+
+
+</body>
+</html>
+{% block contact %}
+
+{% endblock contact %}

@@ -1,0 +1,100 @@
+{% extends 'quantum/base.html' %}
+{% load static %}
+{% block contact %}
+    <head>
+        <title>{{ title }}</title></head>
+
+    <body style="background-color: gold">
+
+
+    <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Quantum Series</h5>
+    <p class="card-text">Is quantum is sufficient to score
+                    good marks in engineering semester exams in AKTU ?</p>
+    <a href="{% url 'signup' %}">
+        <button class="btn btn-sm btn-outline-secondary" style="background-color: deeppink; color: white" type="button">Sign up</button></a>
+       <a href="{% url 'login' %}"> <button class="btn btn-sm btn-outline-secondary" style="background-color: deeppink; color: white" type="button">login</button>
+  </a>
+  </div>
+  <div class="card-footer text-muted">
+    For getting <b><i>Quantum </i></b> , you can sign up or login.
+  </div>
+</div>
+
+
+
+
+    <div class="container" >
+
+        <!--Section: Contact v.2-->
+
+        <section class="mb-4">
+            <div class="container">
+
+
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">May Be You shall Satisfy!</h2>
+                <!--Section description-->
+
+                <div class="row">
+
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-4">
+                        <div class="text-center text-md-left">
+                            <p ><b>Case 1:</b>-<i>See if you give more importance to knowledge than your marks then my friend
+                                quantum is not a good option.
+                                You can use it at the end for revision.</i></p>
+
+
+                            <p><b>Case 2:</b><i>- If you do not want knowledge and want to score 70+ or 75+ or even near about 80,
+                                Quantum is the best option.
+                                If you start studying it one month before sem exams you will definitely able to score
+                                65+ or 70+ in every subject out of 100.</i></p>
+
+                            <p><b>Case 3:</b><i>- If you want knowledge and marks both then you have to study from standard books
+                                or from standard notes provided by
+                                your faculty and along with it if you study quantum, my friend you will definitely able
+                                to score 80+and even more.</i></p>
+
+                            <p><b>You can choose the case from which you belong to.</b></p>
+
+                              <p><i> My personal suggestion is inclined yourself towards practical implementation and coding
+                                than theoretical knowledge, and for marks just use quantum before the exam.
+
+                                  Thanks.</i></p><br>
+                            <hr>
+                            <p><b> This answer  given by one of my friends because he has spent his engineering’s three years
+                                here.</b></p>
+
+                            <p><i>If your aim is to gain the marks only then its better to go for the quantum series for
+                                the preparation.
+                                In first semester examination i have gone through the text and reference book which
+                                consists a lot more syllabus
+                                which were beyond the prescribed syllabus of AKTU formerly UPTU.</i></p>
+
+                            <p><i>But there is not sufficient time through the semester to read all the books in one go so
+                                most of the students applies the short and effective tricks by going through the
+                                quantum.Its my personal experience that the questions asked in semester exams are
+                                repetitive in nature and 70–80% marks are from these. So if you want to gain marks
+                                beside knowledge then go through this and get more marks.</i></p>
+
+
+                        </div>
+                        <div class="status"></div>
+                        <br><br>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+            </div>
+        </section>
+        <!--Section: Contact v.2-->
+    </div>
+    </body>
+    {% include 'quantum/bottom.html' %}
+{% endblock contact %}
