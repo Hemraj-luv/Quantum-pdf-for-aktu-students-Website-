@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import psycopg2
 import dj_database_url
 import django_heroku
 
@@ -27,7 +28,7 @@ SECRET_KEY = 'tr!0nmi02b6kq@5v9wr2t3aq!3r#f_!j^%&6f^wyt*4t_$_fmt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'aktu-official-quantum.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
