@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'quantum.apps.QuantumConfig',
-     'whitenoise.runserver_nostatic',	
+    'whitenoise.runserver_nostatic',
+    'storages',	
 ]
 
 
