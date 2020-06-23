@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from pdf.aws.conf import *
 import psycopg2
 import dj_database_url
 import django_heroku
