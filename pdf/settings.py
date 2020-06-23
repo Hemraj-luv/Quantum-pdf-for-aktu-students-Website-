@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import pdf.aws
+import whitenoise
 import psycopg2
 import dj_database_url
 import django_heroku
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'quantum.apps.QuantumConfig',
     'whitenoise.runserver_nostatic',
-    'storages',	
+    	
 ]
 
 
@@ -149,8 +149,11 @@ AWS_SECRET_ACCESS_KEY = 'P/GOuC2uYlnI8pN/cqlzGUR8tgIvEz90PJfuaQv1'
 AWS_STORAGE_BUCKET_NAME = 'hem-bucket'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+ADMIN_MEDIA_PREFIX = MEDIA_URL + 'admin/'
+
+
+
 
 
 
