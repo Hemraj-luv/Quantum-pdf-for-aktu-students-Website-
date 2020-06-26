@@ -31,9 +31,11 @@
                     </div>
 
                     <div class="signin-form">
-                         <div>
+                          <div>
                             {% for message in messages %}
-                                <h5 style="color:green;">{{ message }}</h5>
+                                <div class="alert alert-success">
+                                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                                    <p style="text-align: center">{{ message }}</p></div>
                             {% endfor %}
                         </div>
                         <h2 class="form-title">Sign In</h2>

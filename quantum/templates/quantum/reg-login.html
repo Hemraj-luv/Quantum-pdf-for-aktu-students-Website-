@@ -28,7 +28,9 @@
                     <div class="signup-form">
                         <div>
                             {% for message in messages %}
-                                <h5 style="color:green;">{{ message }}</h5>
+                                <div class="alert alert-danger">
+                                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                                    <p>{{ message }}</p></div>
                             {% endfor %}
                         </div>
                         <h2 class="form-title">Sign up for Quantum</h2>
