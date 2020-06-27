@@ -40,7 +40,7 @@ def register(request):
                     user.save()
                     regs = Register(Username=username, Email=email, Password=pass1, Name=name)
                     regs.save()
-		    messages.info(request, 'SUCCESS!')
+                    messages.info(request, 'SUCCESS!')
                     return redirect('login')
             else:
                 messages.info(request, 'password not matching')
