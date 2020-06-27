@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="{% static 'quantum/images/unnamed.jpg' %}" width="70%" height="100%"
+                        <figure><img src="{% static 'quantum/images/cd.jpg' %}" width="70%" height="100%"
                                      alt="sing up image"></figure>
                         <a href="{% url 'signup' %}" class="signup-image-link">Create an account</a>
                     </div>
@@ -41,17 +41,17 @@
                         <h2 class="form-title">Sign In</h2>
                         <form method="POST" class="register-form" id="login-form" action="{% url 'login' %}">
                             {% csrf_token %}
-                            <div class="form-group">
-                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                           <div class="form-group">
+                                <label for="your_name"><i class="fa fa-user-secret"></i></label>
                                 <input type="text" name="username_sign_in" id="your_name" placeholder="Your UserName"/>
                             </div>
                             <div class="form-group">
-                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <label for="your_pass"><i class="fa fa-lock"></i></label>
                                 <input type="password" name="pass_sign_in" id="your_pass" placeholder="Password"/>
                             </div>
                             <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term"/>
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                                <input type="checkbox" name="remember-me" id="remember-me" class="fa fa-check"/>
+                                <label for="remember-me" class="label-agree-term"><span class="fa fa-check"></span></span></span>Remember me</label>
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
@@ -59,17 +59,15 @@
                         </form>
                         <div class="social-login">
                             <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                            </ul>
+                            <button type="button" class="btn btn-success"><a href="#"><i class="fa fa-google" style="color: white"></i></a></button>&nbsp;
+                            <button type="button" class="btn btn-warning"><a href="#"><i class="fa fa-facebook" style="color: white"></i></a></button>&nbsp;
+                            <button type="button" class="btn btn-primary"><a href="#"> <i class="fa fa-twitter" style="color: white"></i></a></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </section>  
+  </div>
 
 {% include "quantum/bottom.html" %}
 

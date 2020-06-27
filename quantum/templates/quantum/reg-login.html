@@ -37,38 +37,32 @@
                         <form method="POST" class="register-form" id="register-form" action="{% url 'register' %}">
                             {% csrf_token %}
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="name"><i class="fa fa-user"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
                             </div>
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="name"><i class="fa fa-user-secret"></i></label>
                                 <input type="text" name="username" id="name" placeholder="Your UserName"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                 <label for="name"><i class="fa fa-envelope"></i></label>
                                 <input type="email" name="email" id="email" placeholder="Your Email"/>
                             </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <label for="pass"><i class="fa fa-lock"></i></label>
                                 <input type="password" name="pass1" id="pass" placeholder="Password"/>
                             </div>
                             <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <label for="re-pass"><i class="fa fa-lock"></i></label>
                                 <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
-                            </div>
-                            <div class="form-group">
-                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term"/>
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
-                                    statements in <a href="#" class="term-service">Terms of service</a></label>
                             </div>
 
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
                             </div>
-                        </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="{% static 'quantum/images/unnamed.jpg' %}" width="70%" height="100%"
+                        <figure><img src="{% static 'quantum/images/cd.jpg' %}" width="70%" height="100%"
                                      alt="sing up image"></figure>
                         <a href="{% url 'login' %}" class="signup-image-link">I am already member</a>
                     </div>
