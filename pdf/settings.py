@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tr!0nmi02b6kq@5v9wr2t3aq!3r#f_!j^%&6f^wyt*4t_$_fmt'
+SECRET_KEY = '***************************************'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -87,8 +87,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'hemraj',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
+        'USER': '********',
+        'PASSWORD': '**********',
         'HOST': 'localhost'
     }
 }
@@ -144,19 +144,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
-AWS_ACCESS_KEY_ID = 'AKIAZ6ZC4PK5ZWNV7EXS'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'hem1-bucket'
+AWS_ACCESS_KEY_ID = '********************'
+AWS_SECRET_ACCESS_KEY = '****************************************'
+AWS_STORAGE_BUCKET_NAME = '*************'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 
 ADMIN_MEDIA_PREFIX = MEDIA_URL + 'admin/'
-
-
-
-
-
-
-
 
 django_heroku.settings(locals())
